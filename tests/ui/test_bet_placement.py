@@ -5,15 +5,12 @@ from selenium.webdriver.support.wait import WebDriverWait
 from pages.sportsbook_page import SportsbookPage
 from test_data.factories import generate_valid_stake_amount
 
-pytestmark = [
-    pytest.mark.ui,
-    pytest.mark.e2e,
-    pytest.mark.critical,
-    pytest.mark.regression,
-    pytest.mark.xdist_group("balance_state"),
-]
 
-
+@pytest.mark.ui
+@pytest.mark.e2e
+@pytest.mark.critical
+@pytest.mark.regression
+@pytest.mark.xdist_group("balance_state")
 @allure.title("Place a home-win bet from the match list")
 @allure.epic("Sports Betting")
 @allure.feature("Single Bet Placement")

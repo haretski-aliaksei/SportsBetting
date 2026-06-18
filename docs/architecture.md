@@ -50,8 +50,8 @@ Tests should describe user or business behavior, not low-level implementation de
 
 Current tests:
 
-- `tests/ui/test_place_bet_e2e.py` covers the critical end-to-end betting journey through the UI.
-- `tests/api/test_place_bet_validation.py` validates the maximum stake business rule directly through the API.
+- `tests/ui/test_bet_placement.py` covers bet placement behavior through the UI.
+- `tests/api/test_bet_placement.py` validates bet placement behavior and business rules directly through the API.
 
 Each test includes a docstring explaining why it was selected, as required by the assignment.
 

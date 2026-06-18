@@ -5,16 +5,13 @@ from models.sportsbook import ApiError
 from test_data.constants import ABOVE_MAX_STAKE_AMOUNT, HOME_SELECTION
 from utils.allure_helpers import attach_api_response
 
-pytestmark = [
-    pytest.mark.api,
-    pytest.mark.business_rule,
-    pytest.mark.validation,
-    pytest.mark.critical,
-    pytest.mark.regression,
-    pytest.mark.xdist_group("balance_state"),
-]
 
-
+@pytest.mark.api
+@pytest.mark.business_rule
+@pytest.mark.validation
+@pytest.mark.critical
+@pytest.mark.regression
+@pytest.mark.xdist_group("balance_state")
 @allure.title("Reject a bet when stake is above the allowed maximum")
 @allure.epic("Sports Betting")
 @allure.feature("Single Bet Placement")
