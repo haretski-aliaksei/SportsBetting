@@ -1,0 +1,8 @@
+{
+  "base_url": "https://qae-assignment-tau.vercel.app",
+  "api_url": "https://qae-assignment-tau.vercel.app",
+  "user_id": "candidate-ZAag5DNVYf",
+  "browser": "chrome",
+  "headless": false,
+  "timeout": 10
+}
